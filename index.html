@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="data:,">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tic-Tac-Toe</h1>
+
+        <!-- Game Mode Selection -->
+        <label for="gameMode">Choose Mode:</label>
+        <select id="gameMode">
+            <option value="PvP">Player vs Player</option>
+            <option value="PvAI" selected>Player vs AI</option>
+        </select>
+
+        <!-- Scoreboard -->
+        <div class="scoreboard">
+            <p>Player X: <span id="scoreX">0</span></p>
+            <p>Player O: <span id="scoreO">0</span></p>
+            <p>Ties: <span id="scoreTie">0</span></p>
+        </div>
+
+        <p id="status">Player X's Turn</p>
+        <div class="board" id="board"></div>
+        <button id="reset">Restart Game</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
